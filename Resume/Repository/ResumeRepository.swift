@@ -14,7 +14,7 @@ class ResumeRepository: IResumeRepository {
         self.dataSource = dataSource
     }
     
-    func getAllResume() -> [Resume] {
+    func getAllResumes() -> [Resume] {
         return dataSource.getAll()
     }
     
