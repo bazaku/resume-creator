@@ -7,19 +7,6 @@
 
 import Foundation
 
-protocol IResumeDataSource {
-    func getAll() -> [Resume]
-    func create(resume: Resume)
-    func update(resume: Resume)
-    func delete(resume: Resume)
-}
-
-protocol IResumeRepository {
-    func getAllResume() -> [Resume]
-    func save(resume: Resume)
-    func delete(resume: Resume)
-}
-
 class ResumeRepository: IResumeRepository {
     let dataSource: IResumeDataSource
     

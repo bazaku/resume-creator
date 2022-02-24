@@ -20,3 +20,9 @@ struct Resume {
     var educations: [String]
     var projects: [String]
 }
+
+extension Resume: Equatable {
+    static func == (lhs: Resume, rhs: Resume) -> Bool {
+        return lhs.id == rhs.id
+    }
+}

@@ -22,6 +22,8 @@
 		BEBB0C1727C7A9FA00FDB69F /* Education.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBB0C1627C7A9FA00FDB69F /* Education.swift */; };
 		BEBB0C1927C7AA1300FDB69F /* Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBB0C1827C7AA1300FDB69F /* Project.swift */; };
 		BEBB0C1D27C7ABBB00FDB69F /* ResumeRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBB0C1C27C7ABBB00FDB69F /* ResumeRepository.swift */; };
+		BEBB0C1F27C7C9CC00FDB69F /* IResumeDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBB0C1E27C7C9CC00FDB69F /* IResumeDataSource.swift */; };
+		BEBB0C2127C7C9F200FDB69F /* IResumeRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBB0C2027C7C9F200FDB69F /* IResumeRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +63,8 @@
 		BEBB0C1627C7A9FA00FDB69F /* Education.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Education.swift; sourceTree = "<group>"; };
 		BEBB0C1827C7AA1300FDB69F /* Project.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project.swift; sourceTree = "<group>"; };
 		BEBB0C1C27C7ABBB00FDB69F /* ResumeRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResumeRepository.swift; sourceTree = "<group>"; };
+		BEBB0C1E27C7C9CC00FDB69F /* IResumeDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IResumeDataSource.swift; sourceTree = "<group>"; };
+		BEBB0C2027C7C9F200FDB69F /* IResumeRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IResumeRepository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +162,7 @@
 			isa = PBXGroup;
 			children = (
 				BEBB0C1C27C7ABBB00FDB69F /* ResumeRepository.swift */,
+				BEBB0C2027C7C9F200FDB69F /* IResumeRepository.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -165,6 +170,7 @@
 		BEBB0C1B27C7AB9500FDB69F /* DataSource */ = {
 			isa = PBXGroup;
 			children = (
+				BEBB0C1E27C7C9CC00FDB69F /* IResumeDataSource.swift */,
 			);
 			path = DataSource;
 			sourceTree = "<group>";
@@ -309,6 +315,8 @@
 				BEBB0C1D27C7ABBB00FDB69F /* ResumeRepository.swift in Sources */,
 				BEBB0C1527C7A9E500FDB69F /* Company.swift in Sources */,
 				BEBB0C1927C7AA1300FDB69F /* Project.swift in Sources */,
+				BEBB0C1F27C7C9CC00FDB69F /* IResumeDataSource.swift in Sources */,
+				BEBB0C2127C7C9F200FDB69F /* IResumeRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
