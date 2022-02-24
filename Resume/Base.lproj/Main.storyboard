@@ -64,6 +64,9 @@
                                         <rect key="frame" x="0.0" y="36.5" width="205" height="31"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="gray" title="Create new resume"/>
+                                        <connections>
+                                            <action selector="createNewResume" destination="BYZ-38-t0r" eventType="touchUpInside" id="96t-Q5-5if"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -82,7 +85,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Your resumes" id="52N-UO-Cl8">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="MtP-Xr-imj"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="MtP-Xr-imj">
+                            <connections>
+                                <action selector="createNewResume" destination="BYZ-38-t0r" id="ozj-Ot-5N0"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="emptyDataView" destination="QIq-Uh-Awn" id="9QD-77-KdQ"/>

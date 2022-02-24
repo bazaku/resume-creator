@@ -28,4 +28,8 @@ class ListPresenter {
         let resume = interactor.getAllResumes()[index.row]
         router.routeToDetail(resume: resume, repository: interactor.repository)
     }
+    
+    func createNewResume() {
+        router.routeToDetail(resume: nil, repository: interactor.repository)
+    }
 }

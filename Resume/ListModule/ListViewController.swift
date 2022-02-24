@@ -36,6 +36,9 @@ class ListViewController: UIViewController {
         presenter = ListPresenter(interactor: interactor, router: router)
     }
 
+    @IBAction func createNewResume() {
+        presenter.createNewResume()
+    }
 }
 
 extension ListViewController: UITableViewDataSource, UITableViewDelegate {
@@ -51,5 +54,8 @@ extension ListViewController: UITableViewDataSource, UITableViewDelegate {
         return cell
     }
     
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        presenter.selectResume(index: indexPath)
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
 }
