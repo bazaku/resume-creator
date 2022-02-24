@@ -8,7 +8,7 @@
 import Foundation
 
 class ListRouter {
-    func routeToDetail(resume: Resume, repository: IResumeRepository) {
+    func routeToDetail(resume: Resume?, repository: IResumeRepository) {
         
     }
 }

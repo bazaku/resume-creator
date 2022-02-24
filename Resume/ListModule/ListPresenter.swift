@@ -16,8 +16,12 @@ class ListPresenter {
         self.router = router
     }
     
-    func getAllResume() -> [Resume] {
-        return interactor.getAllResumes()
+    func getAllResume() -> [ListViewModel] {
+        let dateFormatter = DateFormatter()
+//        dateFormatter.dateFormat = ""
+        return interactor.getAllResumes().map {
+            return ListViewModel(title: $0.title, updatedDate: dateFormatter.string(from: $0.updatedDate))
+        }
     }
     
     func selectResume(index: IndexPath) {

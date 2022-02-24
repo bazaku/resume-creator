@@ -27,6 +27,7 @@
 		BEBB0C2727C7CCB200FDB69F /* ListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBB0C2627C7CCB200FDB69F /* ListInteractor.swift */; };
 		BEBB0C2927C7CCC500FDB69F /* ListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBB0C2827C7CCC500FDB69F /* ListPresenter.swift */; };
 		BEBB0C2B27C7CCD700FDB69F /* ListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBB0C2A27C7CCD700FDB69F /* ListRouter.swift */; };
+		BEBB0C2D27C7D4FA00FDB69F /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBB0C2C27C7D4FA00FDB69F /* ListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,7 @@
 		BEBB0C2627C7CCB200FDB69F /* ListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListInteractor.swift; sourceTree = "<group>"; };
 		BEBB0C2827C7CCC500FDB69F /* ListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPresenter.swift; sourceTree = "<group>"; };
 		BEBB0C2A27C7CCD700FDB69F /* ListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRouter.swift; sourceTree = "<group>"; };
+		BEBB0C2C27C7D4FA00FDB69F /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -188,6 +190,7 @@
 				BEBB0C2427C7CC9000FDB69F /* ListViewController.swift */,
 				BEBB0C2627C7CCB200FDB69F /* ListInteractor.swift */,
 				BEBB0C2827C7CCC500FDB69F /* ListPresenter.swift */,
+				BEBB0C2C27C7D4FA00FDB69F /* ListViewModel.swift */,
 				BEBB0C2A27C7CCD700FDB69F /* ListRouter.swift */,
 			);
 			path = ListModule;
@@ -336,6 +339,7 @@
 				BEBB0C1327C7A71800FDB69F /* Resume.swift in Sources */,
 				BEBB0BDF27C7A5F300FDB69F /* AppDelegate.swift in Sources */,
 				BEBB0BE127C7A5F300FDB69F /* SceneDelegate.swift in Sources */,
+				BEBB0C2D27C7D4FA00FDB69F /* ListViewModel.swift in Sources */,
 				BEBB0C2527C7CC9000FDB69F /* ListViewController.swift in Sources */,
 				BEBB0C2727C7CCB200FDB69F /* ListInteractor.swift in Sources */,
 				BEBB0C1D27C7ABBB00FDB69F /* ResumeRepository.swift in Sources */,
@@ -530,7 +534,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -558,7 +562,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

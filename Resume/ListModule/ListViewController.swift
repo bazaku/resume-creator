@@ -10,9 +10,22 @@ import UIKit
 class ListViewController: UIViewController {
     
     private var presenter: ListPresenter!
-
+    var allResumes: [ListViewModel] = []
+    
+    @IBOutlet weak var tableView: UITableView?
+    @IBOutlet weak var emptyDataView: UIView?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        setUp()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        allResumes = presenter.getAllResume()
+        tableView?.reloadData()
+        tableView?.isHidden = allResumes.isEmpty
+        emptyDataView?.isHidden = !allResumes.isEmpty
     }
     
     private func setUp() {
@@ -23,4 +36,20 @@ class ListViewController: UIViewController {
         presenter = ListPresenter(interactor: interactor, router: router)
     }
 
+}
+
+extension ListViewController: UITableViewDataSource, UITableViewDelegate {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return allResumes.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "resume_cell", for: indexPath)
+        let resume = allResumes[indexPath.row]
+        cell.textLabel?.text = resume.title
+        cell.detailTextLabel?.text = resume.updatedDate
+        return cell
+    }
+    
+    
 }

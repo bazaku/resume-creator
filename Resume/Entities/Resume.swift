@@ -9,6 +9,8 @@ import Foundation
 
 struct Resume {
     var id: String
+    var title: String
+    var updatedDate: Date
     var picture: String
     var mobileNumber: String
     var emailAddress: String
