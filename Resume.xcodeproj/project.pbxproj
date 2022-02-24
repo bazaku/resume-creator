@@ -17,6 +17,11 @@
 		BEBB0BF927C7A5F500FDB69F /* ResumeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBB0BF827C7A5F500FDB69F /* ResumeTests.swift */; };
 		BEBB0C0327C7A5F500FDB69F /* ResumeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBB0C0227C7A5F500FDB69F /* ResumeUITests.swift */; };
 		BEBB0C0527C7A5F500FDB69F /* ResumeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBB0C0427C7A5F500FDB69F /* ResumeUITestsLaunchTests.swift */; };
+		BEBB0C1327C7A71800FDB69F /* Resume.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBB0C1227C7A71800FDB69F /* Resume.swift */; };
+		BEBB0C1527C7A9E500FDB69F /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBB0C1427C7A9E500FDB69F /* Company.swift */; };
+		BEBB0C1727C7A9FA00FDB69F /* Education.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBB0C1627C7A9FA00FDB69F /* Education.swift */; };
+		BEBB0C1927C7AA1300FDB69F /* Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBB0C1827C7AA1300FDB69F /* Project.swift */; };
+		BEBB0C1D27C7ABBB00FDB69F /* ResumeRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBB0C1C27C7ABBB00FDB69F /* ResumeRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +56,11 @@
 		BEBB0BFE27C7A5F500FDB69F /* ResumeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ResumeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEBB0C0227C7A5F500FDB69F /* ResumeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResumeUITests.swift; sourceTree = "<group>"; };
 		BEBB0C0427C7A5F500FDB69F /* ResumeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResumeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		BEBB0C1227C7A71800FDB69F /* Resume.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resume.swift; sourceTree = "<group>"; };
+		BEBB0C1427C7A9E500FDB69F /* Company.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Company.swift; sourceTree = "<group>"; };
+		BEBB0C1627C7A9FA00FDB69F /* Education.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Education.swift; sourceTree = "<group>"; };
+		BEBB0C1827C7AA1300FDB69F /* Project.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project.swift; sourceTree = "<group>"; };
+		BEBB0C1C27C7ABBB00FDB69F /* ResumeRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResumeRepository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +114,9 @@
 				BEBB0BDE27C7A5F300FDB69F /* AppDelegate.swift */,
 				BEBB0BE027C7A5F300FDB69F /* SceneDelegate.swift */,
 				BEBB0BE227C7A5F300FDB69F /* ViewController.swift */,
+				BEBB0C1B27C7AB9500FDB69F /* DataSource */,
+				BEBB0C1A27C7AB8D00FDB69F /* Repository */,
+				BEBB0C1127C7A6F800FDB69F /* Entities */,
 				BEBB0BE427C7A5F300FDB69F /* Main.storyboard */,
 				BEBB0BEA27C7A5F500FDB69F /* Assets.xcassets */,
 				BEBB0BEC27C7A5F500FDB69F /* LaunchScreen.storyboard */,
@@ -128,6 +141,32 @@
 				BEBB0C0427C7A5F500FDB69F /* ResumeUITestsLaunchTests.swift */,
 			);
 			path = ResumeUITests;
+			sourceTree = "<group>";
+		};
+		BEBB0C1127C7A6F800FDB69F /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				BEBB0C1227C7A71800FDB69F /* Resume.swift */,
+				BEBB0C1427C7A9E500FDB69F /* Company.swift */,
+				BEBB0C1627C7A9FA00FDB69F /* Education.swift */,
+				BEBB0C1827C7AA1300FDB69F /* Project.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		BEBB0C1A27C7AB8D00FDB69F /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				BEBB0C1C27C7ABBB00FDB69F /* ResumeRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		BEBB0C1B27C7AB9500FDB69F /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DataSource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,10 +300,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEBB0C1727C7A9FA00FDB69F /* Education.swift in Sources */,
 				BEBB0BE927C7A5F300FDB69F /* Resume.xcdatamodeld in Sources */,
+				BEBB0C1327C7A71800FDB69F /* Resume.swift in Sources */,
 				BEBB0BE327C7A5F300FDB69F /* ViewController.swift in Sources */,
 				BEBB0BDF27C7A5F300FDB69F /* AppDelegate.swift in Sources */,
 				BEBB0BE127C7A5F300FDB69F /* SceneDelegate.swift in Sources */,
+				BEBB0C1D27C7ABBB00FDB69F /* ResumeRepository.swift in Sources */,
+				BEBB0C1527C7A9E500FDB69F /* Company.swift in Sources */,
+				BEBB0C1927C7AA1300FDB69F /* Project.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -450,6 +494,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -477,6 +522,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
