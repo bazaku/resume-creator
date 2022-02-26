@@ -7,7 +7,12 @@
 
 import Foundation
 
-class CompanyInteractor {
+protocol ICompanyInteractor {
+    var company: Company { get }
+    func save(companyName: String, durationYear: Int, durationMonth: Int)
+}
+
+class CompanyInteractor: ICompanyInteractor {
     let repository: IResumeRepository
     var resume: Resume
     var company: Company

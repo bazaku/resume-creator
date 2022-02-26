@@ -15,10 +15,10 @@ class CompanyPresenter {
         case invalidDuration
     }
     
-    let interactor: CompanyInteractor
-    let router: CompanyRouter
+    let interactor: ICompanyInteractor
+    let router: ICompanyRouter
     
-    init(interactor: CompanyInteractor, router: CompanyRouter) {
+    init(interactor: ICompanyInteractor, router: ICompanyRouter) {
         self.interactor = interactor
         self.router = router
     }

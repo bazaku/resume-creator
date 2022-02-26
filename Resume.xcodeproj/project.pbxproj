@@ -28,13 +28,14 @@
 		BE3DF47827C9FCBD00078269 /* ProjectPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3DF47727C9FCBD00078269 /* ProjectPresenter.swift */; };
 		BE3DF47A27C9FCC800078269 /* ProjectRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3DF47927C9FCC800078269 /* ProjectRouter.swift */; };
 		BE3DF47C27CA1E5700078269 /* FilePersistanceDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3DF47B27CA1E5700078269 /* FilePersistanceDataSource.swift */; };
+		BE3DF47E27CA2B1E00078269 /* ResumeRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3DF47D27CA2B1E00078269 /* ResumeRepositoryTests.swift */; };
+		BE3DF48327CA304500078269 /* CompanyPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3DF48227CA304500078269 /* CompanyPresenterTests.swift */; };
 		BEBB0BDF27C7A5F300FDB69F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBB0BDE27C7A5F300FDB69F /* AppDelegate.swift */; };
 		BEBB0BE127C7A5F300FDB69F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBB0BE027C7A5F300FDB69F /* SceneDelegate.swift */; };
 		BEBB0BE627C7A5F300FDB69F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEBB0BE427C7A5F300FDB69F /* Main.storyboard */; };
 		BEBB0BE927C7A5F300FDB69F /* Resume.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BEBB0BE727C7A5F300FDB69F /* Resume.xcdatamodeld */; };
 		BEBB0BEB27C7A5F500FDB69F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEBB0BEA27C7A5F500FDB69F /* Assets.xcassets */; };
 		BEBB0BEE27C7A5F500FDB69F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEBB0BEC27C7A5F500FDB69F /* LaunchScreen.storyboard */; };
-		BEBB0BF927C7A5F500FDB69F /* ResumeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBB0BF827C7A5F500FDB69F /* ResumeTests.swift */; };
 		BEBB0C0327C7A5F500FDB69F /* ResumeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBB0C0227C7A5F500FDB69F /* ResumeUITests.swift */; };
 		BEBB0C0527C7A5F500FDB69F /* ResumeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBB0C0427C7A5F500FDB69F /* ResumeUITestsLaunchTests.swift */; };
 		BEBB0C1327C7A71800FDB69F /* Resume.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBB0C1227C7A71800FDB69F /* Resume.swift */; };
@@ -94,6 +95,8 @@
 		BE3DF47727C9FCBD00078269 /* ProjectPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectPresenter.swift; sourceTree = "<group>"; };
 		BE3DF47927C9FCC800078269 /* ProjectRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectRouter.swift; sourceTree = "<group>"; };
 		BE3DF47B27CA1E5700078269 /* FilePersistanceDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilePersistanceDataSource.swift; sourceTree = "<group>"; };
+		BE3DF47D27CA2B1E00078269 /* ResumeRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResumeRepositoryTests.swift; sourceTree = "<group>"; };
+		BE3DF48227CA304500078269 /* CompanyPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyPresenterTests.swift; sourceTree = "<group>"; };
 		BEBB0BDB27C7A5F300FDB69F /* Resume.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Resume.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEBB0BDE27C7A5F300FDB69F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BEBB0BE027C7A5F300FDB69F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -103,7 +106,6 @@
 		BEBB0BED27C7A5F500FDB69F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BEBB0BEF27C7A5F500FDB69F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BEBB0BF427C7A5F500FDB69F /* ResumeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ResumeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		BEBB0BF827C7A5F500FDB69F /* ResumeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResumeTests.swift; sourceTree = "<group>"; };
 		BEBB0BFE27C7A5F500FDB69F /* ResumeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ResumeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEBB0C0227C7A5F500FDB69F /* ResumeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResumeUITests.swift; sourceTree = "<group>"; };
 		BEBB0C0427C7A5F500FDB69F /* ResumeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResumeUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -260,7 +262,8 @@
 		BEBB0BF727C7A5F500FDB69F /* ResumeTests */ = {
 			isa = PBXGroup;
 			children = (
-				BEBB0BF827C7A5F500FDB69F /* ResumeTests.swift */,
+				BE3DF47D27CA2B1E00078269 /* ResumeRepositoryTests.swift */,
+				BE3DF48227CA304500078269 /* CompanyPresenterTests.swift */,
 			);
 			path = ResumeTests;
 			sourceTree = "<group>";
@@ -504,7 +507,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BEBB0BF927C7A5F500FDB69F /* ResumeTests.swift in Sources */,
+				BE3DF48327CA304500078269 /* CompanyPresenterTests.swift in Sources */,
+				BE3DF47E27CA2B1E00078269 /* ResumeRepositoryTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

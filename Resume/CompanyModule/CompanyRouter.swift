@@ -8,7 +8,11 @@
 import Foundation
 import UIKit
 
-class CompanyRouter {
+protocol ICompanyRouter {
+    func routeToDetail()
+}
+
+class CompanyRouter: ICompanyRouter {
     weak var viewController: UIViewController?
     
     init(viewController: UIViewController) {
