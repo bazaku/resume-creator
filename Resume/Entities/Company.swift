@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Company {
+struct Company: Codable {
     var id: String
     var name: String
     var durationYear: Int

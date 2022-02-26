@@ -51,15 +51,15 @@ class DetailViewController: UIViewController {
     
     private func displayResume() {
         let resume = presenter.getResume()
-        let picture = resume.picture
-        if let picture = picture {
+        let picture = getPictureURL()
+        if FileManager.default.fileExists(atPath: picture.path) {
             DispatchQueue.main.async { [weak self] in
                 do {
-                    if let fileUrl = URL(string: picture) {
-                        let data = try Data(contentsOf: fileUrl)
-                        self?.photoImageView?.image = UIImage(data: data)
-                    }
-                } catch {}
+                    let data = try Data(contentsOf: picture)
+                    self?.photoImageView?.image = UIImage(data: data)
+                } catch {
+                    print(error)
+                }
                 self?.insertPhotoButton?.isHidden = self?.photoImageView?.image != nil
                 self?.photoImageView?.isHidden = self?.photoImageView?.image == nil
             }
@@ -178,6 +178,13 @@ class DetailViewController: UIViewController {
         imagePicker.delegate = self
         present(imagePicker, animated: true)
     }
+    
+    private func getPictureURL() -> URL {
+        let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
+        let documentsDirectory = paths[0]
+        let resume = presenter.getResume()
+        return documentsDirectory.appendingPathComponent("\(resume.id).jpg")
+    }
 }
 
 extension DetailViewController: UITextViewDelegate {
@@ -240,16 +247,11 @@ extension DetailViewController: UIImagePickerControllerDelegate, UINavigationCon
                 return
             }
             let data = image.jpegData(compressionQuality: 1.0)
-            let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
-            let documentsDirectory = paths[0]
-            let resume = presenter.getResume()
-            let fileURL = documentsDirectory.appendingPathComponent("\(resume.id).jpg")
+            let fileURL = getPictureURL()
             try data?.write(to: fileURL)
             photoImageView?.image = image
             photoImageView?.isHidden = false
             insertPhotoButton?.isHidden = true
-            presenter.updatePhoto(fileURL.absoluteString)
-            print(fileURL)
         } catch {
             print(error)
         }

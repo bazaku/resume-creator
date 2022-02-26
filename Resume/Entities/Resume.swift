@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Resume {
+struct Resume: Codable {
     var id: String
     var title: String?
     var updatedDate: Date = Date()

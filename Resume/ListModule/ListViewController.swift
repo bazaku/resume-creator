@@ -30,7 +30,7 @@ class ListViewController: UIViewController {
     }
     
     private func setUp() {
-        let dataSource = SimpleDataSource()
+        let dataSource = FilePersistanceDataSource()
         let repository = ResumeRepository(dataSource: dataSource)
         let interactor = ListInteractor(repository: repository)
         let router = ListRouter(viewController: self)

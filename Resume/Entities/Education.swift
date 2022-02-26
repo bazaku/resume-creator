@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Education {
+struct Education: Codable {
     var id: String
     var className: String
     var passingYear: Int
