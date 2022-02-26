@@ -18,9 +18,11 @@ class ListPresenter {
     
     func getAllResume() -> [ListViewModel] {
         let dateFormatter = DateFormatter()
-//        dateFormatter.dateFormat = ""
+        dateFormatter.dateFormat = "dd MMMM yyyy HH:mm:ss"
         return interactor.getAllResumes().map {
-            return ListViewModel(title: $0.title, updatedDate: dateFormatter.string(from: $0.updatedDate))
+            let title = $0.title ?? "Untitled resume"
+            let updatedDate = dateFormatter.string(from: $0.updatedDate)
+            return ListViewModel(title: title, updatedDate: updatedDate)
         }
     }
     

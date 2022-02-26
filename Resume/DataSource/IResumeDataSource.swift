@@ -9,6 +9,7 @@ import Foundation
 
 protocol IResumeDataSource {
     func getAll() -> [Resume]
+    func get(id: String) -> Resume?
     func create(resume: Resume)
     func update(resume: Resume)
     func delete(resume: Resume)
@@ -21,15 +22,21 @@ class SimpleDataSource: IResumeDataSource {
         return dataStore
     }
     
+    func get(id: String) -> Resume? {
+        return dataStore.first { $0.id == id }
+    }
+    
     func create(resume: Resume) {
         dataStore.append(resume)
     }
     
     func update(resume: Resume) {
         let index = dataStore.firstIndex { $0 == resume }
-        guard let index = index else { return }
-        dataStore.remove(at: index)
-        dataStore.insert(resume, at: index)
+        guard let index = index else {
+            print("Save fail")
+            return
+        }
+        dataStore[index] = resume
     }
     
     func delete(resume: Resume) {

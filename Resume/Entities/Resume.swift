@@ -9,18 +9,18 @@ import Foundation
 
 struct Resume {
     var id: String
-    var title: String
-    var updatedDate: Date
-    var picture: String
-    var mobileNumber: String
-    var emailAddress: String
-    var residenceAddress: String
-    var careerObjective: String
-    var yearsOfExperience: Int
-    var workSummary: [Company]
-    var skills: [String]
-    var educations: [String]
-    var projects: [String]
+    var title: String?
+    var updatedDate: Date = Date()
+    var picture: String?
+    var mobileNumber: String?
+    var emailAddress: String?
+    var residenceAddress: String?
+    var careerObjective: String?
+    var yearsOfExperience: Int?
+    var workSummary: [Company] = []
+    var skills: [String] = []
+    var educations: [Education] = []
+    var projects: [Project] = []
 }
 
 extension Resume: Equatable {

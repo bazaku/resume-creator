@@ -8,9 +8,16 @@
 import Foundation
 
 struct Project {
+    var id: String
     var name: String
     var teamSize: Int
     var projectSummary: String
-    var technologyUsed: [String]
+    var technologyUsed: String
     var role: String
+}
+
+extension Project: Equatable {
+    static func == (lhs: Project, rhs: Project) -> Bool {
+        return lhs.id == rhs.id
+    }
 }

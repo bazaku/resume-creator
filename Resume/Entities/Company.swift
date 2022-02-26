@@ -8,6 +8,14 @@
 import Foundation
 
 struct Company {
+    var id: String
     var name: String
-    var duration: TimeInterval
+    var durationYear: Int
+    var durationMonth: Int
+}
+
+extension Company: Equatable {
+    static func == (lhs: Company, rhs: Company) -> Bool {
+        return lhs.id == rhs.id
+    }
 }

@@ -7,6 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BE254F7127C836DC000F27B3 /* CardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE254F7027C836DC000F27B3 /* CardView.xib */; };
+		BE254F7327C83945000F27B3 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE254F7227C83945000F27B3 /* CardView.swift */; };
+		BE35B61427C9171700DA822B /* CompanyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE35B61327C9171700DA822B /* CompanyViewController.swift */; };
+		BE35B61627C9172600DA822B /* CompanyInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE35B61527C9172600DA822B /* CompanyInteractor.swift */; };
+		BE35B61827C9173200DA822B /* CompanyPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE35B61727C9173200DA822B /* CompanyPresenter.swift */; };
+		BE35B61A27C9173D00DA822B /* CompanyRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE35B61927C9173D00DA822B /* CompanyRouter.swift */; };
+		BE35B61D27C92F5400DA822B /* SkillViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE35B61C27C92F5400DA822B /* SkillViewController.swift */; };
+		BE35B61F27C92F7100DA822B /* SkillInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE35B61E27C92F7100DA822B /* SkillInteractor.swift */; };
+		BE35B62127C92F8300DA822B /* SkillPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE35B62027C92F8300DA822B /* SkillPresenter.swift */; };
+		BE35B62327C92F9100DA822B /* SkillRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE35B62227C92F9100DA822B /* SkillRouter.swift */; };
+		BE35B62627C932A300DA822B /* UIViewController+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE35B62527C932A300DA822B /* UIViewController+Alert.swift */; };
+		BE35B62927C9400600DA822B /* EducationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE35B62827C9400600DA822B /* EducationViewController.swift */; };
+		BE35B62B27C9401700DA822B /* EducationInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE35B62A27C9401700DA822B /* EducationInteractor.swift */; };
+		BE35B62D27C9402500DA822B /* EducationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE35B62C27C9402500DA822B /* EducationPresenter.swift */; };
+		BE35B62F27C9403400DA822B /* EducationRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE35B62E27C9403400DA822B /* EducationRouter.swift */; };
+		BE3DF47127C9FA9500078269 /* UIViewController+Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3DF47027C9FA9400078269 /* UIViewController+Keyboard.swift */; };
+		BE3DF47427C9FCA600078269 /* ProjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3DF47327C9FCA600078269 /* ProjectViewController.swift */; };
+		BE3DF47627C9FCB300078269 /* ProjectInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3DF47527C9FCB300078269 /* ProjectInteractor.swift */; };
+		BE3DF47827C9FCBD00078269 /* ProjectPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3DF47727C9FCBD00078269 /* ProjectPresenter.swift */; };
+		BE3DF47A27C9FCC800078269 /* ProjectRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3DF47927C9FCC800078269 /* ProjectRouter.swift */; };
 		BEBB0BDF27C7A5F300FDB69F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBB0BDE27C7A5F300FDB69F /* AppDelegate.swift */; };
 		BEBB0BE127C7A5F300FDB69F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBB0BE027C7A5F300FDB69F /* SceneDelegate.swift */; };
 		BEBB0BE627C7A5F300FDB69F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEBB0BE427C7A5F300FDB69F /* Main.storyboard */; };
@@ -28,6 +48,10 @@
 		BEBB0C2927C7CCC500FDB69F /* ListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBB0C2827C7CCC500FDB69F /* ListPresenter.swift */; };
 		BEBB0C2B27C7CCD700FDB69F /* ListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBB0C2A27C7CCD700FDB69F /* ListRouter.swift */; };
 		BEBB0C2D27C7D4FA00FDB69F /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBB0C2C27C7D4FA00FDB69F /* ListViewModel.swift */; };
+		BEBB0C2F27C7D81B00FDB69F /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBB0C2E27C7D81B00FDB69F /* DetailViewController.swift */; };
+		BEBB0C3127C7D82800FDB69F /* DetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBB0C3027C7D82800FDB69F /* DetailInteractor.swift */; };
+		BEBB0C3327C7D83600FDB69F /* DetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBB0C3227C7D83600FDB69F /* DetailPresenter.swift */; };
+		BEBB0C3527C7D84700FDB69F /* DetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBB0C3427C7D84700FDB69F /* DetailRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +72,26 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BE254F7027C836DC000F27B3 /* CardView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardView.xib; sourceTree = "<group>"; };
+		BE254F7227C83945000F27B3 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		BE35B61327C9171700DA822B /* CompanyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyViewController.swift; sourceTree = "<group>"; };
+		BE35B61527C9172600DA822B /* CompanyInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyInteractor.swift; sourceTree = "<group>"; };
+		BE35B61727C9173200DA822B /* CompanyPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyPresenter.swift; sourceTree = "<group>"; };
+		BE35B61927C9173D00DA822B /* CompanyRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyRouter.swift; sourceTree = "<group>"; };
+		BE35B61C27C92F5400DA822B /* SkillViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillViewController.swift; sourceTree = "<group>"; };
+		BE35B61E27C92F7100DA822B /* SkillInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillInteractor.swift; sourceTree = "<group>"; };
+		BE35B62027C92F8300DA822B /* SkillPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillPresenter.swift; sourceTree = "<group>"; };
+		BE35B62227C92F9100DA822B /* SkillRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillRouter.swift; sourceTree = "<group>"; };
+		BE35B62527C932A300DA822B /* UIViewController+Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alert.swift"; sourceTree = "<group>"; };
+		BE35B62827C9400600DA822B /* EducationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EducationViewController.swift; sourceTree = "<group>"; };
+		BE35B62A27C9401700DA822B /* EducationInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EducationInteractor.swift; sourceTree = "<group>"; };
+		BE35B62C27C9402500DA822B /* EducationPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EducationPresenter.swift; sourceTree = "<group>"; };
+		BE35B62E27C9403400DA822B /* EducationRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EducationRouter.swift; sourceTree = "<group>"; };
+		BE3DF47027C9FA9400078269 /* UIViewController+Keyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Keyboard.swift"; sourceTree = "<group>"; };
+		BE3DF47327C9FCA600078269 /* ProjectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectViewController.swift; sourceTree = "<group>"; };
+		BE3DF47527C9FCB300078269 /* ProjectInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectInteractor.swift; sourceTree = "<group>"; };
+		BE3DF47727C9FCBD00078269 /* ProjectPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectPresenter.swift; sourceTree = "<group>"; };
+		BE3DF47927C9FCC800078269 /* ProjectRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectRouter.swift; sourceTree = "<group>"; };
 		BEBB0BDB27C7A5F300FDB69F /* Resume.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Resume.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEBB0BDE27C7A5F300FDB69F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BEBB0BE027C7A5F300FDB69F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -73,6 +117,10 @@
 		BEBB0C2827C7CCC500FDB69F /* ListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPresenter.swift; sourceTree = "<group>"; };
 		BEBB0C2A27C7CCD700FDB69F /* ListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRouter.swift; sourceTree = "<group>"; };
 		BEBB0C2C27C7D4FA00FDB69F /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
+		BEBB0C2E27C7D81B00FDB69F /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		BEBB0C3027C7D82800FDB69F /* DetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailInteractor.swift; sourceTree = "<group>"; };
+		BEBB0C3227C7D83600FDB69F /* DetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPresenter.swift; sourceTree = "<group>"; };
+		BEBB0C3427C7D84700FDB69F /* DetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +148,71 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BE254F6F27C83675000F27B3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BEBB0BEA27C7A5F500FDB69F /* Assets.xcassets */,
+				BEBB0BE427C7A5F300FDB69F /* Main.storyboard */,
+				BEBB0BEC27C7A5F500FDB69F /* LaunchScreen.storyboard */,
+				BE254F7027C836DC000F27B3 /* CardView.xib */,
+				BE254F7227C83945000F27B3 /* CardView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BE35B61227C916F600DA822B /* CompanyModule */ = {
+			isa = PBXGroup;
+			children = (
+				BE35B61327C9171700DA822B /* CompanyViewController.swift */,
+				BE35B61527C9172600DA822B /* CompanyInteractor.swift */,
+				BE35B61727C9173200DA822B /* CompanyPresenter.swift */,
+				BE35B61927C9173D00DA822B /* CompanyRouter.swift */,
+			);
+			path = CompanyModule;
+			sourceTree = "<group>";
+		};
+		BE35B61B27C92EE000DA822B /* SkillModule */ = {
+			isa = PBXGroup;
+			children = (
+				BE35B61C27C92F5400DA822B /* SkillViewController.swift */,
+				BE35B61E27C92F7100DA822B /* SkillInteractor.swift */,
+				BE35B62027C92F8300DA822B /* SkillPresenter.swift */,
+				BE35B62227C92F9100DA822B /* SkillRouter.swift */,
+			);
+			path = SkillModule;
+			sourceTree = "<group>";
+		};
+		BE35B62427C9327C00DA822B /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				BE35B62527C932A300DA822B /* UIViewController+Alert.swift */,
+				BE3DF47027C9FA9400078269 /* UIViewController+Keyboard.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		BE35B62727C93FDE00DA822B /* EducationModule */ = {
+			isa = PBXGroup;
+			children = (
+				BE35B62827C9400600DA822B /* EducationViewController.swift */,
+				BE35B62A27C9401700DA822B /* EducationInteractor.swift */,
+				BE35B62C27C9402500DA822B /* EducationPresenter.swift */,
+				BE35B62E27C9403400DA822B /* EducationRouter.swift */,
+			);
+			path = EducationModule;
+			sourceTree = "<group>";
+		};
+		BE3DF47227C9FC8C00078269 /* ProjectModule */ = {
+			isa = PBXGroup;
+			children = (
+				BE3DF47327C9FCA600078269 /* ProjectViewController.swift */,
+				BE3DF47527C9FCB300078269 /* ProjectInteractor.swift */,
+				BE3DF47727C9FCBD00078269 /* ProjectPresenter.swift */,
+				BE3DF47927C9FCC800078269 /* ProjectRouter.swift */,
+			);
+			path = ProjectModule;
+			sourceTree = "<group>";
+		};
 		BEBB0BD227C7A5F300FDB69F = {
 			isa = PBXGroup;
 			children = (
@@ -125,14 +238,17 @@
 			children = (
 				BEBB0BDE27C7A5F300FDB69F /* AppDelegate.swift */,
 				BEBB0BE027C7A5F300FDB69F /* SceneDelegate.swift */,
+				BE3DF47227C9FC8C00078269 /* ProjectModule */,
+				BE35B62727C93FDE00DA822B /* EducationModule */,
+				BE35B61B27C92EE000DA822B /* SkillModule */,
+				BE35B61227C916F600DA822B /* CompanyModule */,
 				BEBB0C2327C7CC2B00FDB69F /* DetailModule */,
 				BEBB0C2227C7CC1900FDB69F /* ListModule */,
 				BEBB0C1B27C7AB9500FDB69F /* DataSource */,
 				BEBB0C1A27C7AB8D00FDB69F /* Repository */,
 				BEBB0C1127C7A6F800FDB69F /* Entities */,
-				BEBB0BE427C7A5F300FDB69F /* Main.storyboard */,
-				BEBB0BEA27C7A5F500FDB69F /* Assets.xcassets */,
-				BEBB0BEC27C7A5F500FDB69F /* LaunchScreen.storyboard */,
+				BE35B62427C9327C00DA822B /* Utilities */,
+				BE254F6F27C83675000F27B3 /* Views */,
 				BEBB0BEF27C7A5F500FDB69F /* Info.plist */,
 				BEBB0BE727C7A5F300FDB69F /* Resume.xcdatamodeld */,
 			);
@@ -199,6 +315,10 @@
 		BEBB0C2327C7CC2B00FDB69F /* DetailModule */ = {
 			isa = PBXGroup;
 			children = (
+				BEBB0C2E27C7D81B00FDB69F /* DetailViewController.swift */,
+				BEBB0C3027C7D82800FDB69F /* DetailInteractor.swift */,
+				BEBB0C3227C7D83600FDB69F /* DetailPresenter.swift */,
+				BEBB0C3427C7D84700FDB69F /* DetailRouter.swift */,
 			);
 			path = DetailModule;
 			sourceTree = "<group>";
@@ -310,6 +430,7 @@
 				BEBB0BEE27C7A5F500FDB69F /* LaunchScreen.storyboard in Resources */,
 				BEBB0BEB27C7A5F500FDB69F /* Assets.xcassets in Resources */,
 				BEBB0BE627C7A5F300FDB69F /* Main.storyboard in Resources */,
+				BE254F7127C836DC000F27B3 /* CardView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,17 +458,40 @@
 				BEBB0C1727C7A9FA00FDB69F /* Education.swift in Sources */,
 				BEBB0BE927C7A5F300FDB69F /* Resume.xcdatamodeld in Sources */,
 				BEBB0C1327C7A71800FDB69F /* Resume.swift in Sources */,
+				BE35B62127C92F8300DA822B /* SkillPresenter.swift in Sources */,
+				BEBB0C3527C7D84700FDB69F /* DetailRouter.swift in Sources */,
+				BE3DF47427C9FCA600078269 /* ProjectViewController.swift in Sources */,
+				BE3DF47A27C9FCC800078269 /* ProjectRouter.swift in Sources */,
 				BEBB0BDF27C7A5F300FDB69F /* AppDelegate.swift in Sources */,
+				BE35B61427C9171700DA822B /* CompanyViewController.swift in Sources */,
+				BE35B62D27C9402500DA822B /* EducationPresenter.swift in Sources */,
 				BEBB0BE127C7A5F300FDB69F /* SceneDelegate.swift in Sources */,
+				BE35B62F27C9403400DA822B /* EducationRouter.swift in Sources */,
+				BE3DF47827C9FCBD00078269 /* ProjectPresenter.swift in Sources */,
 				BEBB0C2D27C7D4FA00FDB69F /* ListViewModel.swift in Sources */,
 				BEBB0C2527C7CC9000FDB69F /* ListViewController.swift in Sources */,
+				BEBB0C2F27C7D81B00FDB69F /* DetailViewController.swift in Sources */,
+				BE35B61827C9173200DA822B /* CompanyPresenter.swift in Sources */,
 				BEBB0C2727C7CCB200FDB69F /* ListInteractor.swift in Sources */,
+				BE35B62927C9400600DA822B /* EducationViewController.swift in Sources */,
 				BEBB0C1D27C7ABBB00FDB69F /* ResumeRepository.swift in Sources */,
+				BE3DF47127C9FA9500078269 /* UIViewController+Keyboard.swift in Sources */,
 				BEBB0C2B27C7CCD700FDB69F /* ListRouter.swift in Sources */,
+				BE3DF47627C9FCB300078269 /* ProjectInteractor.swift in Sources */,
+				BE35B61F27C92F7100DA822B /* SkillInteractor.swift in Sources */,
+				BE35B62B27C9401700DA822B /* EducationInteractor.swift in Sources */,
+				BE35B62327C92F9100DA822B /* SkillRouter.swift in Sources */,
+				BEBB0C3327C7D83600FDB69F /* DetailPresenter.swift in Sources */,
 				BEBB0C1527C7A9E500FDB69F /* Company.swift in Sources */,
 				BEBB0C1927C7AA1300FDB69F /* Project.swift in Sources */,
+				BE35B62627C932A300DA822B /* UIViewController+Alert.swift in Sources */,
+				BE35B61D27C92F5400DA822B /* SkillViewController.swift in Sources */,
+				BEBB0C3127C7D82800FDB69F /* DetailInteractor.swift in Sources */,
+				BE254F7327C83945000F27B3 /* CardView.swift in Sources */,
+				BE35B61627C9172600DA822B /* CompanyInteractor.swift in Sources */,
 				BEBB0C2927C7CCC500FDB69F /* ListPresenter.swift in Sources */,
 				BEBB0C1F27C7C9CC00FDB69F /* IResumeDataSource.swift in Sources */,
+				BE35B61A27C9173D00DA822B /* CompanyRouter.swift in Sources */,
 				BEBB0C2127C7C9F200FDB69F /* IResumeRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

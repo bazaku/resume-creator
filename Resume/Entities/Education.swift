@@ -8,7 +8,14 @@
 import Foundation
 
 struct Education {
+    var id: String
     var className: String
     var passingYear: Int
     var cgpa: Double
+}
+
+extension Education: Equatable {
+    static func == (lhs: Education, rhs: Education) -> Bool {
+        return lhs.id == rhs.id
+    }
 }

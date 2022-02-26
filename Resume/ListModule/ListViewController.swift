@@ -23,6 +23,7 @@ class ListViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         allResumes = presenter.getAllResume()
+        
         tableView?.reloadData()
         tableView?.isHidden = allResumes.isEmpty
         emptyDataView?.isHidden = !allResumes.isEmpty
@@ -32,7 +33,7 @@ class ListViewController: UIViewController {
         let dataSource = SimpleDataSource()
         let repository = ResumeRepository(dataSource: dataSource)
         let interactor = ListInteractor(repository: repository)
-        let router = ListRouter()
+        let router = ListRouter(viewController: self)
         presenter = ListPresenter(interactor: interactor, router: router)
     }
 
@@ -50,7 +51,7 @@ extension ListViewController: UITableViewDataSource, UITableViewDelegate {
         let cell = tableView.dequeueReusableCell(withIdentifier: "resume_cell", for: indexPath)
         let resume = allResumes[indexPath.row]
         cell.textLabel?.text = resume.title
-        cell.detailTextLabel?.text = resume.updatedDate
+        cell.detailTextLabel?.text = "Last edit: \(resume.updatedDate)"
         return cell
     }
     

@@ -18,12 +18,21 @@ class ResumeRepository: IResumeRepository {
         return dataSource.getAll()
     }
     
+    func getResume(id: String) -> Resume? {
+        return dataSource.get(id: id)
+    }
+    
+    func createNewResume() -> Resume {
+        var resume = Resume(id: UUID().uuidString)
+        resume.updatedDate = Date()
+        create(resume: resume)
+        return resume
+    }
+    
     func save(resume: Resume) {
-        if resume.id.isEmpty {
-            create(resume: resume)
-        } else {
-            update(resume: resume)
-        }
+        var resume = resume
+        resume.updatedDate = Date()
+        update(resume: resume)
     }
     
     func delete(resume: Resume) {

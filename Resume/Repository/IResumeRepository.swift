@@ -9,6 +9,8 @@ import Foundation
 
 protocol IResumeRepository {
     func getAllResumes() -> [Resume]
+    func getResume(id: String) -> Resume?
+    func createNewResume() -> Resume
     func save(resume: Resume)
     func delete(resume: Resume)
 }
